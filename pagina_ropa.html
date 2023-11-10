@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header> 
+        <h1>Tienda</h1>
+        <div class="container-icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" stroke="currentColor" class="icon-cart">
+
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                d="M2.25 3h1.386c.51 0 .955.343 
+                1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 
+                3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684
+                 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106
+                  5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 
+                  0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+
+              </svg>
+              <div class="count-product">
+                <span id="contador-productos">0</span>
+              </div>
+              <div class="container-cart-products hidden-cart">
+                <div class="cart-products">
+                    <div class="info-cart-products">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Zapatos Nike</p>
+                        <span class="precio-producto-carrito">Q350.00</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>     
+              </div>
+                <div class="cart-total">
+                    <h3>Total: </h3>
+                    <span class="pago-total">Q500.00</span>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="C:\Users\hp\Desktop\JavaScript\Imagenes\Tenis vans.avif" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Tenis Nike </h2>
+                <p>Q350.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?auto=format&fit=crop&q=80&w=1480&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Tenis Puma </h2>
+                <p>Q255.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Tenis Adidas </h2>
+                <p>Q380.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&q=80&w=1412&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Tenis New Balance </h2>
+                <p>Q350.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script>
+       const btnCart = document.querySelector('.container-icon');
+        const containerCartProducts = document.querySelector('.container-cart-products')
+
+
+            btnCart.addEventListener('click', () =>{
+            containerCartProducts.classList.toggle('hidden-cart')
+            }) 
+    </script>
+
+
+</body>
+</html>
